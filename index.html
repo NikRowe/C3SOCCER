@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script src="https://kit.fontawesome.com/1388c9ff87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>C3SOCCER</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- The video -->
+        <video autoplay muted loop id="bgVideo">
+            <source src="img/Orange Vale Water Co.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay -->
+        <div class="content">
+            <!-- Logo over Video -->
+            <div class="row">
+                <img class="logoOverlay" src="img/c3SoccerLogoText.png">
+            </div>
+            <div class="row pt-2">
+                <!--Buttons-->
+                <div class="col-sm-3 col-md-2 col-xl-1 offset-sm-1">
+                    <!-- Register Button -->
+                    <button role="button" class="btn btn-lg pl-4 pr-4 welcomeBtn" data-toggle="modal" data-target="#regModal">Register</button>
+                </div>
+                <div class="col-sm-1 pt-1 pt-sm-0 pl-xl-5 btmBtn">
+                    <!-- Our Mission Button -->
+                    <button type="button" class="btn btn-lg text-nowrap pl-2 pr-2 welcomeBtn" data-toggle="modal" data-target="#regModal">Our Mission</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="regModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"> 
+                <div class="modal-header bgBlue textOrange">
+                    <h3 class="modal-title">Register</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form> 
+                            <div class="form-group row">
+                                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                                <div class="col-5 col-md-3">
+                                    <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                                </div>
+                                <div class="col-7">
+                                    <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-2 col-form-label">Email</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col offset-md-2">
+                                    May we contact you?
+                                    <div class="form-check form-check-inline">
+                                   <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                        <label for="contactYes" class="form-check-label">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                   <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                        <label for="contactNo" class="form-check-label">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="comments" class="col-md-2 col-form-label">Comments</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="comments" name="feedback" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn welcomeBtn">Register Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CoachShep Modal -->
+    <div id="coachShep" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"> 
+                <div class="modal-header test">
+                    <h3 class="modal-title">Coach Shep Shepard</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <img class="pl-3" src="/img/CoachShepThumb.jpg">
+                        </div>
+                        <form> 
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    May we contact you?
+                                    <div class="form-check form-check-inline">
+                                   <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                        <label for="contactYes" class="form-check-label">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                   <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                        <label for="contactNo" class="form-check-label">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="comments" class="col-md-10 col-form-label">Contact Shep</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="comments" name="feedback" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <button type="submit" class="btn coachBtn">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> 
+                <img src="img/3CSoccerLogo1noBg.png" height="100" width="130" />
+            </a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#ovwcNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="ovwcNavbar">
+                <ul class="navbar-nav ml-sm-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-futbol fa-lg"></i> Coarses </a> </li>
+                    <li class="nav-item aboutUs"><a class="nav-link" href="coaches.html"><i class="fas fa-users"></i>Coaches </a> 
+                        <ul class="navbar-nav aboutDrop">
+                            <li><a class="nav-link" data-toggle="modal" href="#coachShep" class="fas fa-running fa-lg"></i>Chris Shepard </a></li>
+                            <li><a class="nav-link" href="#"><i class="fas fa-running fa-lg"></i>Assistant Coach </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i>About </a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+
+
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--script-- src="scripts.js"></!--script-->
+    
+</body>
+</html>

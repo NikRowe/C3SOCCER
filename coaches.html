@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script src="https://kit.fontawesome.com/1388c9ff87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>C3 COACHES</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> 
+                <img src="img/3CSoccerLogo1noBg.png" height="100" width="130" />
+            </a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#ovwcNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="ovwcNavbar">
+                <ul class="navbar-nav ml-sm-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-futbol fa-lg"></i> Coarses </a> </li>
+                    <li class="nav-item aboutUs"><a class="nav-link" href="coaches.html"><i class="fas fa-users"></i>Coaches </a> 
+                        <ul class="navbar-nav aboutDrop">
+                            <li><a class="nav-link" data-toggle="modal" href="#coachShep" class="fas fa-running fa-lg"></i>Chris Shepard </a></li>
+                            <li><a class="nav-link" href="#"><i class="fas fa-running fa-lg"></i>Assistant Coach </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i>About </a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CoachShep Modal -->
+    <div id="coachShep" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"> 
+                <div class="modal-header test">
+                    <h3 class="modal-title">Coach Shep Shepard</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <img class="pl-3" src="/img/CoachShepThumb.jpg">
+                        </div>
+                        <form> 
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    May we contact you?
+                                    <div class="form-check form-check-inline">
+                                   <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                        <label for="contactYes" class="form-check-label">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                   <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                        <label for="contactNo" class="form-check-label">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="comments" class="col-md-10 col-form-label">Contact Shep</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="comments" name="feedback" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <button type="submit" class="btn coachBtn">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2> THIS WILL SHOW ALL THE COACHING STAFF IN AN OVERVIEW</h2>
+
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
