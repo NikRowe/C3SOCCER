@@ -40,7 +40,15 @@ h1 {
   }
 
 .logoOverlay {
-    width: 35%;
+    position: relative;
+    max-width: 300px;
+}
+
+@media only screen and (max-width: 450px) {
+    .logoOverlay {
+        max-width: 80%; !important;
+        max-height: 40%; !important;
+    }
 }
 
 .welcomeBtn:hover{
