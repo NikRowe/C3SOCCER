@@ -42,6 +42,7 @@ h1 {
 .logoOverlay {
     position: relative;
     max-width: 300px;
+    margin-left: ;
 }
 
 @media only screen and (max-width: 450px) {
@@ -57,7 +58,8 @@ h1 {
 
 .welcomeBtn {
     background-color: var(--c3Blue);
-    color: var(--c3Yellow);
+    color: white;
+    border-radius: 48%;
 }
 
 .coachBtn {
