@@ -41,13 +41,13 @@ h1 {
 
 .logoOverlay {
     position: relative;
-    max-width: 300px;
-    margin-left: ;
+    max-width: 500px;
+    margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     .logoOverlay {
-        max-width: 80%; !important;
+        max-width: 90%; !important;
     }
 }
 
@@ -60,6 +60,7 @@ h1 {
     background-color: var(--c3Blue);
     color: white;
     border-radius: 48%;
+    
 }
 
 .coachBtn {
